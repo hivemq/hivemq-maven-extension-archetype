@@ -5,7 +5,7 @@
 
     <groupId>com.hivemq</groupId>
     <artifactId>hivemq-extension-archetype</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.1</version>
     <packaging>maven-archetype</packaging>
 
     <name>HiveMQ 4 Extension Archetype</name>
