@@ -26,6 +26,8 @@
     <description>HiveMQ 4 Hello World Extension - a simple reference for all extension developers</description>
 
     <properties>
+        <extension.name>Hello World Extension</extension.name>
+        <extension.author>dc-square GmbH</extension.author>
         <asciidoctor.version>1.5.2.1</asciidoctor.version>
         <output.dir>${basedir}</output.dir>
         <source.document.name>README.adoc</source.document.name>
@@ -35,7 +37,7 @@
         <dependency>
             <groupId>com.hivemq</groupId>
             <artifactId>hivemq-extension-sdk</artifactId>
-            <version>4.1.0</version>
+            <version>4.2.0</version>
         </dependency>
     </dependencies>
 
