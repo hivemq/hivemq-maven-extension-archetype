@@ -1,3 +1,4 @@
+#set($dollar = '$')
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
  ~ Copyright 2018 dc-square GmbH
@@ -16,9 +17,9 @@
  -->
 
 <hivemq-extension>
-    <id>${artifactId}</id>
-    <version>${version}</version>
-    <name>${extension.name}</name>
-    <author>${extension.author}</author>
+    <id>${dollar}{artifactId}</id>
+    <version>${dollar}{version}</version>
+    <name>${dollar}{extension.name}</name>
+    <author>${dollar}{extension.author}</author>
     <priority>1000</priority>
 </hivemq-extension>
