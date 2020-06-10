@@ -41,7 +41,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * It uses the HiveMQ Testcontainer to automatically package and deploy this extension inside a HiveMQ docker container.
  *
  * @author Yannick Weber
- * @since 4.3.3
+ * @since 4.3.1
  */
 class HelloWorldInterceptorIT {
 
