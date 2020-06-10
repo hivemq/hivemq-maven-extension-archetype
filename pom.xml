@@ -5,7 +5,7 @@
 
     <groupId>com.hivemq</groupId>
     <artifactId>hivemq-extension-archetype</artifactId>
-    <version>4.3.2</version>
+    <version>4.3.3</version>
     <packaging>maven-archetype</packaging>
 
     <name>HiveMQ 4 Extension Archetype</name>
@@ -27,6 +27,12 @@
         <developer>
             <name>Florian Limpöck</name>
             <email>florian.limpoeck@hivemq.com</email>
+            <organization>HiveMQ GmbH</organization>
+            <organizationUrl>http://www.hivemq.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>Yannick Weber</name>
+            <email>yannick.weber@hivemq.com</email>
             <organization>HiveMQ GmbH</organization>
             <organizationUrl>http://www.hivemq.com</organizationUrl>
         </developer>
