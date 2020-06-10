@@ -19,16 +19,16 @@
     <inceptionYear>2018</inceptionYear>
 
     <organization>
-        <name>dc-square GmbH</name>
-        <url>http://www.dc-square.de</url>
+        <name>HiveMQ GmbH</name>
+        <url>http://www.hivemq.com</url>
     </organization>
 
     <developers>
         <developer>
             <name>Florian Limpöck</name>
-            <email>florian.limpoeck@dc-square.de</email>
-            <organization>dc-square GmbH</organization>
-            <organizationUrl>http://www.dc-square.de</organizationUrl>
+            <email>florian.limpoeck@hivemq.com</email>
+            <organization>HiveMQ GmbH</organization>
+            <organizationUrl>http://www.hivemq.com</organizationUrl>
         </developer>
     </developers>
 
