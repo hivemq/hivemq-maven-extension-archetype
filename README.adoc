@@ -17,7 +17,7 @@ A new HiveMQ extension project can be created by running the following maven com
 
 [source,bash]
 ----
-mvn archetype:generate -DarchetypeGroupId=com.hivemq -DarchetypeArtifactId=hivemq-extension-archetype -DarchetypeVersion=4.3.0
+mvn archetype:generate -DarchetypeGroupId=com.hivemq -DarchetypeArtifactId=hivemq-extension-archetype -DarchetypeVersion=4.3.1
 ----
 
 === Maven Repository
