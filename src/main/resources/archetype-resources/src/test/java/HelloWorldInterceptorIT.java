@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 
 /*
- * Copyright 2020 HiveMQ GmbH
+ * Copyright 2018-present HiveMQ GmbH
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -51,19 +52,16 @@ class HelloWorldInterceptorIT {
                     .withExtension(MavenHiveMQExtensionSupplier.direct().get());
 
     @Test
+    @Timeout(value = 5, unit = TimeUnit.MINUTES)
     void test_payload_modified() throws InterruptedException {
         final Mqtt5BlockingClient client = Mqtt5Client.builder()
                 .identifier("hello-world-client")
-                .serverHost("localhost")
                 .serverPort(extension.getMqttPort())
                 .buildBlocking();
         client.connect();
 
         final Mqtt5BlockingClient.Mqtt5Publishes publishes = client.publishes(MqttGlobalPublishFilter.ALL);
-        client.subscribeWith()
-                .topicFilter("hello/world")
-                .qos(MqttQos.EXACTLY_ONCE)
-                .send();
+        client.subscribeWith().topicFilter("hello/world").send();
 
         client.publishWith().topic("hello/world").payload("Good Bye World!".getBytes(StandardCharsets.UTF_8)).send();
 
