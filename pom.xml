@@ -28,13 +28,13 @@
             <name>Florian Limpöck</name>
             <email>florian.limpoeck@hivemq.com</email>
             <organization>HiveMQ GmbH</organization>
-            <organizationUrl>http://www.hivemq.com</organizationUrl>
+            <organizationUrl>https://www.hivemq.com</organizationUrl>
         </developer>
         <developer>
             <name>Yannick Weber</name>
             <email>yannick.weber@hivemq.com</email>
             <organization>HiveMQ GmbH</organization>
-            <organizationUrl>http://www.hivemq.com</organizationUrl>
+            <organizationUrl>https://www.hivemq.com</organizationUrl>
         </developer>
     </developers>
 
