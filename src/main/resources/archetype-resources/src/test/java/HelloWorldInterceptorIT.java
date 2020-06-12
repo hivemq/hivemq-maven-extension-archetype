@@ -21,7 +21,6 @@
 package ${package};
 
 import com.hivemq.client.mqtt.MqttGlobalPublishFilter;
-import com.hivemq.client.mqtt.datatypes.MqttQos;
 import com.hivemq.client.mqtt.mqtt5.Mqtt5BlockingClient;
 import com.hivemq.client.mqtt.mqtt5.Mqtt5Client;
 import com.hivemq.client.mqtt.mqtt5.message.publish.Mqtt5Publish;
@@ -29,8 +28,8 @@ import com.hivemq.extension.sdk.api.annotations.NotNull;
 import com.hivemq.testcontainer.core.MavenHiveMQExtensionSupplier;
 import com.hivemq.testcontainer.junit5.HiveMQTestContainerExtension;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.extension.RegisterExtension;
-
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
