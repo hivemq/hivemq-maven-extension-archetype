@@ -3,15 +3,18 @@
 :hivemq-extensions-docu-link: http://www.hivemq.com/docs/latest/extensions/
 :hivemq-extensions-directory: http://www.hivemq.com/extensions/
 
-== Maven Archetype for HiveMQ Extensions
+= Maven Archetype for HiveMQ Extensions
 
-The enterprise MQTT broker HiveMQ offers this free and open source Extension SDK. This allows everyone to extend HiveMQ and add custom functionality via extensions.
+image:https://maven-badges.herokuapp.com/maven-central/com.hivemq/hivemq-extension-archetype/badge.svg["Maven Central",link="https://maven-badges.herokuapp.com/maven-central/com.hivemq/hivemq-extension-archetype"]
+
+The enterprise MQTT broker HiveMQ offers this free and open source Extension SDK.
+This allows everyone to extend HiveMQ and add custom functionality via extensions.
 
 With custom HiveMQ extensions, it's easy to add functionality like writing messages to databases, integrate with other service buses, collect statistics, add fine-grained security and virtually anything you else you can imagine.
 
 Extension development for HiveMQ is as easy as writing a Java main method once you grasp the core concepts.
 
-=== Using the Maven Archetype
+== Using the Maven Archetype
 
 A new HiveMQ extension project can be created by running the following maven command.
 
@@ -20,29 +23,27 @@ A new HiveMQ extension project can be created by running the following maven com
 mvn archetype:generate -DarchetypeGroupId=com.hivemq -DarchetypeArtifactId=hivemq-extension-archetype -DarchetypeVersion=4.4.0
 ----
 
-=== Maven Repository
+The hivemq-extension-archetype is available in Maven Central, so no special configuration is needed.
 
-The hivemq-extension-archetype is available in Maven central, so no special configuration is needed.
-
-
-=== Extension Development Documentation
+== Extension Development Documentation
 
 Please visit {hivemq-extensions-docu-link}[our website] for the documentation how to develop extensions.
 
-=== Example Extensions
+== Example Extensions
 
-Many example extensions are available, most of them as open source. You can find an overview of officially supported extensions {hivemq-extensions-directory}[here]:
+Many example extensions are available, most of them as open source.
+You can find an overview of officially supported extensions {hivemq-extensions-directory}[here]:
 
 You can find many example extensions by browsing {hivemq-github-link}[here on Github].
 
-=== Need help ?
+== Need help ?
 
 If you need help with custom HiveMQ extensions please contact support@hivemq.com.
 
-= Contributing
+== Contributing
 
 If you want to contribute to HiveMQ Maven Extension Archetype, see the link:CONTRIBUTING.md[contribution guidelines].
 
-= License
+== License
 
 HiveMQ Maven Extension Archetype is licensed under the `APACHE LICENSE, VERSION 2.0`. A copy of the license can be found link:LICENSE[here].
