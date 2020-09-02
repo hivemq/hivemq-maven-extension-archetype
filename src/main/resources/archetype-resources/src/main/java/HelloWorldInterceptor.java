@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.hivemq;
+package ${package};
 
 import com.hivemq.extension.sdk.api.annotations.NotNull;
 import com.hivemq.extension.sdk.api.interceptor.publish.PublishInboundInterceptor;
