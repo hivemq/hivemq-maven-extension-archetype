@@ -169,7 +169,7 @@
                     <plugin>
                         <groupId>com.hivemq</groupId>
                         <artifactId>hivemq-maven-plugin</artifactId>
-                        <version>4.0.2</version>
+                        <version>4.0.3</version>
                         <executions>
                             <execution>
                                 <id>hivemq</id>
