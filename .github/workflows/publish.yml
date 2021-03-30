@@ -1,9 +1,7 @@
 name: Publish to Maven Central
 
 on:
-  release:
-    types:
-      - created
+  workflow_dispatch:
 
 jobs:
   build:
@@ -23,5 +21,5 @@ jobs:
         env:
           SIGN_KEY: ${{ secrets.SIGN_KEY }}
           SIGN_KEY_PASS: ${{ secrets.SIGN_KEY_PASS }}
-        run: mvn clean package -Dmaven.test.skip=true sign:sign deploy -B
+        run: mvn clean package -Dmaven.test.skip=true sign:sign nexus-staging:deploy-staged -B
 
