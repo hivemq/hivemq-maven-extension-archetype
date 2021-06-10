@@ -58,4 +58,8 @@
       </includes>
     </fileSet>
   </fileSets>
+  <requiredProperties>
+    <requiredProperty key="hivemqExtensionSdkVersion">
+    </requiredProperty>
+  </requiredProperties>
 </archetype-descriptor>
